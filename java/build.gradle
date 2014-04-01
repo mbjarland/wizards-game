@@ -1,0 +1,12 @@
+
+apply plugin: 'java'
+apply plugin: 'idea'
+
+repositories { 
+	mavenCentral()
+}
+
+task wrapper(type: Wrapper) {
+	jarFile = "wrapper/gradleWrapper.jar"
+	gradleVersion = "1.11"
+}
